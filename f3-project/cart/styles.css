@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* <---header start ---> */
+header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.05px;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #FFFFFFB2;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 40px;
+}
+
+main h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 77.45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.display {
+    display: flex;
+    width: 100%;
+}
+
+.display #left {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display #right {
+    width: 35%;
+    display: flex;
+    padding: 0px 30px;
+}
+
+.error {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#left .item {
+    display: flex;
+    flex-direction: column;
+    width: 31.555%;
+    height: 530px;
+    border: 1px solid black;
+    margin-right: 8px;
+    margin-top: 16px;
+}
+
+#left .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+}
+
+#left .item button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+#left .item p {
+    margin: 10px 10px;
+    text-transform: capitalize;
+}
+
+#right #checkout h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#right #checkout {
+    width: 100%;
+    margin-top: 16px;
+    background-color: black;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+#right #checkout .pr {
+    padding: 0px 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    margin-top: 15px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px 10px !important;
+}
+
+.btn {
+    padding: 25px 10px;
+}
+
+.btn button {
+    width: 100%;
+    height: 40px;
+}

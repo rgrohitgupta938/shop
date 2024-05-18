@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop.</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <span id="user-info"></span>
+        <a href="../index.html">Home</a>
+        <a href="../shop/index.html">Shop</a>
+        <a href="../cart/index.html">My Cart</a>
+        <a href="../profile/index.html">Profile</a>
+        <a href="../logout/index.html">Log Out</a>
+      </div>
+    </nav>
+
+    <main>
+      <aside>
+        <section>
+          <h2>Colors</h2>
+          <ul>
+            <li>
+              <input id="red" type="checkbox" name="color" /><label for="red"
+                >Red</label
+              >
+            </li>
+            <li>
+              <input id="blue" type="checkbox" name="color" /><label for="blue"
+                >Blue</label
+              >
+            </li>
+            <li>
+              <input id="green" type="checkbox" name="color" /><label
+                for="green"
+                >Green</label
+              >
+            </li>
+            <li>
+              <input id="black" type="checkbox" name="color" /><label
+                for="black"
+                >Black</label
+              >
+            </li>
+            <li>
+              <input id="white" type="checkbox" name="color" /><label
+                for="white"
+                >White</label
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Sizes</h2>
+          <ul>
+            <li>
+              <input id="s" type="checkbox" name="size" /><label for="s"
+                >S</label
+              >
+            </li>
+            <li>
+              <input id="m" type="checkbox" name="size" /><label for="m"
+                >M</label
+              >
+            </li>
+            <li>
+              <input id="l" type="checkbox" name="size" /><label for="l"
+                >L</label
+              >
+            </li>
+            <li>
+              <input id="xl" type="checkbox" name="size" /><label for="xl"
+                >XL</label
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Rating</h2>
+          <input
+            type="range"
+            id="rating"
+            min="0"
+            max="5"
+            value="0"
+            list="values"
+          />
+          <datalist id="values">
+            <option value="0" label="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </section>
+        <section>
+          <h2>Price Range</h2>
+          <ul>
+            <li>
+              <input id="0-25" type="checkbox" name="price" /><label for="0-25"
+                >$0 to $25</label
+              >
+            </li>
+            <li>
+              <input id="25-50" type="checkbox" name="price" /><label
+                for="25-50"
+                >$25 to $50</label
+              >
+            </li>
+            <li>
+              <input id="50-100" type="checkbox" name="price" /><label
+                for="50-100"
+                >$50 to $100</label
+              >
+            </li>
+            <li>
+              <input id="100on" type="checkbox" name="price" /><label
+                for="100on"
+                >$100 onwards</label
+              >
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <main-content>
+        <input type="text" id="search" placeholder="Search" />
+        <div class="filters">
+          <div class="filter active">All</div>
+          <div class="filter">Mens</div>
+          <div class="filter">Womens</div>
+          <div class="filter">Jewellery</div>
+          <div class="filter">Electronics</div>
+        </div>
+        <div id="products"></div>
+      </main-content>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
