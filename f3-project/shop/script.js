@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       user.lName ? user.lName : ""
     }`;
   } else {
-    window.location.href = "../login/index.html";
+    window.location.href = "/login/index.html";
   }
   getProducts();
 

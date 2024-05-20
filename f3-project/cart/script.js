@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let user = JSON.parse(localStorage.getItem("user") || "{}");
   if (Object.keys(user).length === 0) {
-    window.location.href = "../login/index.html";
+    window.location.href = "/login/index.html";
   }
   if (cart.length === 0) {
     left.innerHTML = `<h2 class="error">No Item added</h2>`;
@@ -59,7 +59,7 @@ function displayMenu() {
   checkout.addEventListener("click", (e) => {
     if (e.target.id === "check") {
       console.log("clicked");
-      window.location.href = "../razorpay/index.html";
+      window.location.href = "/razorpay/index.html";
     }
   });
 }

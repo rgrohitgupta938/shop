@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let user = JSON.parse(localStorage.getItem("user") || "{}");
   if (Object.keys(user).length === 0) {
-    window.location.href = "../login/index.html";
+    window.location.href = "/login/index.html";
   }
   let users = JSON.parse(localStorage.getItem("users"));
   let st = users.findIndex(
@@ -67,6 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("logout").addEventListener("click", () => {
-    window.location.href = "../logout/index.html";
+    window.location.href = "/logout/index.html";
   });
 });

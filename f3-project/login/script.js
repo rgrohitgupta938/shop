@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (st >= 0 && users[st].password === password.value) {
         let user = users[st];
         localStorage.setItem("user", JSON.stringify(user));
-        window.location.href = "../shop/index.html";
+        window.location.href = "/shop/index.html";
       } else {
         error.textContent = "Incorrect Email or Password!";
         error.style.display = "block";
